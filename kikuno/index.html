@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kikuno</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    video {
+      width: 100%;
+      max-width: 100vw;
+      max-height: 100vh;
+      object-fit: contain;
+    }
+    .dl-btn {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(20, 20, 20, 0.80);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-family: 'Georgia', serif;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: all 0.3s ease;
+      z-index: 999;
+      cursor: pointer;
+    }
+    .dl-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+    .dl-icon { font-size: 16px; }
+  </style>
+</head>
+<body>
+  <video src="final_02-菊野さん.mp4" autoplay loop muted playsinline></video>
+  <a href="final_02-菊野さん.mp4" download="final_02-菊野さん.mp4" class="dl-btn">
+    <span class="dl-icon">↓</span>
+    <span class="dl-text">Download</span>
+  </a>
+</body>
+</html>
